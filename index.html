@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"
+        integrity="sha256-+Q/z/qVOexByW1Wpv81lTLvntnZQVYppIL1lBdhtIq0=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo list</title>
+</head>
+
+<body>
+
+    <header>Todo Lists
+
+        <!-- <p>Today :</p>
+    <p id="date-now"></p> -->
+
+    </header>
+
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+
+                <option value="all">All Lists</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Uncompleted</option>
+
+            </select>
+        </div>
+    </form>
+
+    <div class="todo-container">
+        <!-- Show todo list you add here -->
+        <ul class="todo-list"></ul>
+    </div>
+
+
+
+
+    <script src="./app.js"></script>
+<!-- 
+    <script>
+        // var today = new Date();
+        // var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        document.getElementById("date-now").innerHTML = dateTime;
+    </script> -->
+</body>
+
+</html>
